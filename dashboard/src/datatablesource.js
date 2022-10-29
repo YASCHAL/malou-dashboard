@@ -37,4 +37,24 @@ export const roomColumns = [
     
    
 ]
+export const reservationColumns = [
+    {field: '_id', headerName: 'Reservation ID', width: 220 },
+    {
+        field:"user", headerName:"Username", width:150, renderCell:(params)=>{
+            return(
+                <div className="cellWithImg">
+                    <img src={params.row.img || "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAHyE0mlTEn-IhQiQ02MX0MuzFzgY7kzekkitCOmZk3r-cFKw&s"}   alt="avatar" className="cellImg" />
+                    {params.row.username}
+                </div>
+            )
+        }
+    },
+    {field:"email", headerName:"Email",width:200},
+    {field:"phone", headerName:"Phone",width:150},
+    {field:"hotelId", headerName:"Hotel",width:220},
+    {field:"roomsNumber", headerName:"Rooms Number",width:150},
+    {field:"selectedDates", headerName:"Date",width:800},
+    {field:"selectedRooms", headerName:"Rooms ID",width:450},
+   
+]
 
