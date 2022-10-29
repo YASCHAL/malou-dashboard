@@ -24,7 +24,7 @@ const ReservationSchema = new mongoose.Schema({
   },
   
   selectedDates:{
-    type: String,
+    type: [],
   }
 })
 
