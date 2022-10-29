@@ -1,7 +1,8 @@
 import "./sidebar.scss"
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import PeopleAltOutlinedIcon from '@mui/icons-material/PeopleAltOutlined';
-import ProductionQuantityLimitsIcon from '@mui/icons-material/ProductionQuantityLimits';
+import BusinessIcon from '@mui/icons-material/Business';
+import BedIcon from '@mui/icons-material/Bed';
 import ListAltIcon from '@mui/icons-material/ListAlt';
 import LocalShippingIcon from '@mui/icons-material/LocalShipping';
 import EqualizerIcon from '@mui/icons-material/Equalizer';
@@ -41,21 +42,23 @@ const Sidebar = () => {
             </Link>
             <Link to="/hotels" style={{textDecoration:"none"}}>
                  <li>
-                <ProductionQuantityLimitsIcon className="icon"/>
+                <BusinessIcon className="icon"/>
                 <span>Hotels</span>
             </li>
             </Link>
             <Link to="/rooms" style={{textDecoration:"none"}}>
 
             <li>
-                <ListAltIcon className="icon"/>
+                <BedIcon className="icon"/>
                 <span>Rooms</span>
             </li>
             </Link>
+            <Link to="/reservation" style={{textDecoration:"none"}}>
             <li>
-                 <LocalShippingIcon className="icon"/>
-                <span>Delivery</span>
+                 <ListAltIcon className="icon"/>
+                <span>Reservations</span>
             </li>
+            </Link>
             <p className="title">USEFUL</p>
             <li>
                 <EqualizerIcon className="icon"/>

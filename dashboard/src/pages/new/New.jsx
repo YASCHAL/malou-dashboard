@@ -5,11 +5,14 @@ import DriveFolderUploadRoundedIcon from '@mui/icons-material/DriveFolderUploadR
 import { useState } from "react";
 import axios from "axios";
 import { axiosInstance } from "../../config";
+import { useNavigate } from "react-router-dom";
 
 const New = ({inputs, title}) => {
 
   const [file, setFile] = useState('')
   const [info, setInfo] = useState({})
+  const navigate = useNavigate()
+
   const handleChange = (e) =>{
     setInfo((prev) => ({...prev, [e.target.id]: e.target.value}))
   }
@@ -28,6 +31,8 @@ const New = ({inputs, title}) => {
           img : url,
         };
         await axiosInstance.post("/auth/register",newUser)
+        navigate('/users')
+
     }catch(err){  console.log(err)}
     
   }
