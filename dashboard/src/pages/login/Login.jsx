@@ -36,28 +36,44 @@ const Login = () => {
 
   return (
     <>
-    <div className="bg"></div>
-    <div className="bg bg2"></div>
-    <div className="bg bg3"></div>
-    <div className="login">
-      <div className="login_container">
-      
-        <div className="signIn">
-          <h3>sign-in</h3>
-          <input onChange={handleChange} id="username" type="text" className="username" placeholder="Username" />
-          <input
-          onChange={handleChange}
-          id="password"
-          type="password"
-          className="password"
-          placeholder="your password"
-          />
-          <button className='login__button' disabled={loading} onClick={handleClick}>Login</button>
-          {error && <span>{error.message}</span>}
+      <div className="bg"></div>
+      <div className="bg bg2"></div>
+      <div className="bg bg3"></div>
+      <div className="login">
+        <div className="login_container">
+          <div className="signIn">
+            <h1>sign-in</h1>
+            <div className="sii">
+              <input
+                onChange={handleChange}
+                id="username"
+                type="text"
+                className="username"
+                placeholder="Username"
+              />
+            </div>
+            <div className="sii">
+              <input
+                onChange={handleChange}
+                id="password"
+                type="password"
+                className="password"
+                placeholder="your password"
+              />
+            </div>
+
+            <button
+              className="login__button"
+              disabled={loading}
+              onClick={handleClick}
+            >
+              Login
+            </button>
+            {error && <span>{error.message}</span>}
+          </div>
         </div>
       </div>
-    </div>
-          </>
+      </>
   )
 }
 

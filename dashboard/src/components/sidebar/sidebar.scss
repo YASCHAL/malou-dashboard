@@ -3,6 +3,8 @@
     border: 1px solid rgb(212, 208, 208);
     min-height: 100vh;
     background-color: white;
+    margin-left: 5px;
+    margin-top: 5px;
 
     .top{
         height: 50px;
@@ -11,9 +13,9 @@
         justify-content: center;
 
         .logo{
-            font-size: 20px;
+            font-size: 28px;
             font-weight: bold;
-            color: rebeccapurple;
+            color: rgb(44, 31, 223);
         }
     }
     hr{
@@ -41,17 +43,19 @@
                 cursor: pointer;
 
                 &:hover{
-                    background-color: #ece8ff;
+                    background-color: #dedde2;
                 }
 
                 .icon{
-                    font-size: 18px;
-                    color: #7451f8;
+                    font-size: 22px;
+                    color: rgb(44, 31, 223);
                 }
 
                 span{
-                    font-size: 13px;font-weight: 520;
+                    font-size: 17px;
+                    font-weight: 520;
                     margin-left: 10px;
+                    color: rgb(126, 115, 115);
                 }
             }
         }
@@ -66,7 +70,7 @@
             width: 20px;
             height: 20px;
             border-radius: 5px;
-            border: 1px solid rebeccapurple;
+            border: 1px solid rgb(27, 10, 185);
             cursor: pointer;
             margin: 10px;
 
