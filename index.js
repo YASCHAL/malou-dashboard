@@ -1,6 +1,3 @@
-//1
-//create my application
-//add "type : module" in package.json to use Es6 modules
 
 import express from "express"
 import dotenv from "dotenv"
